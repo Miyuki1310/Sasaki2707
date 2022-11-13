@@ -1,0 +1,253 @@
+*{
+    box-sizing: border-box;
+}
+.header{
+    height: 52px;
+    background-color: #fff;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.header_information{
+    margin: 0;
+    padding: 0;
+}
+
+.header_information-items{
+    display: inline-block;
+    position: relative;
+ 
+}
+.grid{
+    height: 100%;
+}
+
+.header_information-items:hover > a{
+    color: pink;
+}
+
+.header_information-items:hover{
+    cursor: pointer;
+}
+.header_navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.information_description{
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 1.6rem;
+    padding: 0px 24px;
+}
+
+/*Header notification*/
+
+.header_notifycation{
+    position: absolute;
+    width: 360px;
+    top: 120%;
+    background-color: #fff;
+    right: 24px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    display: none;
+}
+
+.header_notify-header{
+    display: flex;
+    justify-content: space-between;
+    height: 17px;
+    margin-top: 26px;
+    margin-bottom: 12px;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header_notify-list{
+    padding: 0;
+    padding: 0 8px;
+    list-style-type: none;
+}
+
+.header_notify-link{
+    display: flex;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-decoration: none;
+}
+
+.header_notify-image{
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    margin: 8px 12px 8px 0;
+}
+
+.header_notify-name{
+    font-size: 1.4rem;
+    color: var(--black-color);
+    margin-bottom: 10px;
+}
+
+.header_notify-discription{
+    font-size: 1.3rem;
+    color: var(--text-color);
+}
+
+.header_information-items-has-notifycation:hover .header_notifycation{
+    display: block;
+}
+
+.header_notifycation::before{
+    content: "";
+    border: 15px solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 12px;
+    top: -20px;
+}
+
+.header_notifycation::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -15px;
+    right: 0;
+    height: 20px;
+    width: calc(112.46px - 24px);
+}
+
+.header_notify-item:hover{
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.information_description-image{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.header_information,
+.header_information-items{
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Slider */
+.slider{
+    position: relative;
+    margin-top: 52px;
+    padding-top: 50%;
+    background-image: url('../img/memory.jpg');
+}
+
+.slider_text{
+    position: absolute;
+    color: var(--white-color);
+    top: 50%;
+    font-size: 2.5rem;
+    left: 2%;
+    transform: translateY(-50%);
+    font-family:cursive;
+}
+
+.slider_text-second{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    font-size: 2.5rem;
+    color: var(--white-color);
+    transform: translateY(-50%);
+    text-align: right;
+    font-family: cursive;
+}
+
+/*Content*/
+
+.content_section{
+    max-width: 800px;
+    margin: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section_heading{
+    text-align: center;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.section_subheading{
+    text-align: center;
+    font-size: 1.4rem;
+    opacity: 0.6;
+}
+
+.section_memmory{
+    margin-top: 50px;
+}
+
+.section_memory-me{
+    margin-top: 20px;
+}
+
+.section_memmory-discription{
+    display: flex;
+}
+
+.section_memmory-img{
+    width: 150px;
+    height: 150px;
+}
+
+.section_memory-me{
+    justify-content: flex-end;
+}
+
+.section_memmory-text{
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.section_memmory-text-heading{
+    font-size: 1.6rem;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.section_memmory-text-discription{
+    font-size: 1.6rem;
+    margin: 0;
+    word-spacing: 2px;
+    line-height: 20px;
+}
+
+.discription-me{
+    text-align: right;
+}
+.heading-me{
+    text-align: right;
+}
+
+.section_memmory-footer{
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+.section_memmory-footer-text{
+    font-size: 1.6rem;
+    margin: 10px 0;
+    text-align: center;
+}
